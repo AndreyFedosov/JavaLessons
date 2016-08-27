@@ -1,9 +1,9 @@
 package lesson2;
 
 public class HomeWordSecond {
-    public static double COMMISIONINPERCENT = 5;
-    public static double[] BALANCES = {1200, 250, 2000, 500, 3200};
-    public static String[] OWNERNAMES = {"Jane", "Ann", "Jack", "Oww", "Lane"};
+    public static final double COMMISIONINPERCENT = 5;
+    public static final double[] BALANCES = {1200, 250, 2000, 500, 3200};
+    public static final String[] OWNERNAMES = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
     public static double withdrawBalance(double balance, double withdrawal) {
 
