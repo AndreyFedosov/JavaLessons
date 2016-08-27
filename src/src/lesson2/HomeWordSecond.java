@@ -21,6 +21,18 @@ public class HomeWordSecond {
         return -1;
     }
 
+    public static double fundBalance(String ownerName, double fund) {
+
+        for (int i = 0; i < OWNERNAMES.length; i++) {
+            if (OWNERNAMES[i].equals(ownerName))
+            {
+                return BALANCES[i] + fund;
+            }
+        }
+        return -1;
+    }
+
+
     public static void main(String[] args) {
         double balance = 100;
         double withdrawal = 10;
@@ -44,6 +56,22 @@ public class HomeWordSecond {
         } else {
             System.out.println("Withdrawal: NO. Please check your balance. Commission is " + COMMISIONINPERCENT + "% from payment");
         }
+
+        //Homework 2.3
+
+        ownerName = "Oww";
+        sumOfWithdrawal = 100;
+
+        withdrawBalance = fundBalance(ownerName,sumOfWithdrawal);
+
+        if ( withdrawBalance >= 0 ) {
+            System.out.println(ownerName + " " + withdrawBalance);
+        } else {
+            System.out.println("Fund: NO. Please check your balance.");
+        }
+
+
+
 
     }
 }
