@@ -2,7 +2,7 @@ package lesson2;
 
 public class HomeWorkOne {
 
-    public static double sum(double array[]){
+    public static double sum(double[] array){
         double result = 0;
         for (double item : array){
             result += item;
@@ -10,7 +10,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static int sum(int array[]){
+    public static int sum(int[] array){
         int result = 0;
         for (int item : array){
             result += item;
@@ -18,7 +18,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static double min(double array[]){
+    public static double min(double[] array){
         double result = array[0];
         for (double item : array){
             if (result > item) result = item;
@@ -26,7 +26,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static int min(int array[]){
+    public static int min(int[] array){
         int result = array[0];
         for (int item : array){
             if (result > item) result = item;
@@ -34,7 +34,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static double max(double array[]){
+    public static double max(double[] array){
         double result = array[0];
         for (double item : array){
             if (result < item) result = item;
@@ -42,7 +42,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static int max(int array[]){
+    public static int max(int[] array){
         int result = array[0];
         for (int item : array){
             if (result < item) result = item;
@@ -50,7 +50,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static double maxPositive(double array[]){
+    public static double maxPositive(double[] array){
         double result = array[0];
         for (double item : array){
             if (result < item && item >0) result = item;
@@ -59,7 +59,7 @@ public class HomeWorkOne {
 
     }
 
-    public static int maxPositive(int array[]){
+    public static int maxPositive(int[] array){
         int result = array[0];
         for (int item : array){
             if (result < item && item > 0) result = item;
@@ -67,7 +67,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static double multiplication(double array[]){
+    public static double multiplication(double[] array){
         double result = 1;
         for (double item : array){
             result *= item;
@@ -75,7 +75,7 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static int multiplication(int array[]){
+    public static int multiplication(int[] array){
         int result = 1;
         for (int  item : array){
             result *= item;
@@ -83,16 +83,16 @@ public class HomeWorkOne {
         return result;
     }
 
-    public static double modulus(double array[]){
+    public static double modulus(double[] array){
         return array[0] % array[array.length-1];
     }
 
-    public static int modulus(int array[]){
+    public static int modulus(int[] array){
         return array[0] % array[array.length-1];
 
     }
 
-    public static double secondLargest(double array[]){
+    public static double secondLargest(double[] array){
         double max = max(array);
         double result = array[0];
 
@@ -103,7 +103,7 @@ public class HomeWorkOne {
 
     }
 
-    public static int secondLargest(int array[]){
+    public static int secondLargest(int[] array){
         int max = max(array);
         int result = array[0];
 
