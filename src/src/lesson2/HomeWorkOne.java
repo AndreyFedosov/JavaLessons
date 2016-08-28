@@ -51,7 +51,7 @@ public class HomeWorkOne {
     }
 
     public static double maxPositive(double[] array){
-        double result = array[0];
+        double result = 0;
         for (double item : array){
             if (result < item && item >0) result = item;
         }
@@ -60,7 +60,7 @@ public class HomeWorkOne {
     }
 
     public static int maxPositive(int[] array){
-        int result = array[0];
+        int result = 0;
         for (int item : array){
             if (result < item && item > 0) result = item;
         }
