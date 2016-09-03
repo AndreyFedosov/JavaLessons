@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.temp;
 
 public class Phone {
     private String manufacturer;

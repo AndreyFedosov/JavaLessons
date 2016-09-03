@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.temp;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +21,15 @@ public class Main {
         phone.setOperatingSystem("IOS9");
         System.out.println(phone.getOperatingSystem());
         System.out.println("");
-        Iphone iPhone = new Iphone(1000,"5S", "China");
-        
+        Iphone iPhone = new Iphone(5000,"5S", "China");
+
+        iPhone.setCost(400);
+        System.out.println(iPhone.getPhonePrice());
+        System.out.println(iPhone.getParentPhonePrice());
+
+        iPhone.setParentPrice(1000);
+        System.out.println(iPhone.getPhonePrice());
+        System.out.println(iPhone.getParentPhonePrice());
+
     }
 }
