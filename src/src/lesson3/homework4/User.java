@@ -94,7 +94,7 @@ public class User {
 
     void monthIncreaser(int addMonth)
     {
-        monthsOfEmployment += addMonth;
+        setMonthsOfEmployment(getMonthsOfEmployment() + addMonth);
     }
 
 }
