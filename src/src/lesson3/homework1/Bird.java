@@ -1,6 +1,6 @@
 package lesson3.homework1;
 
-public class Bird {
+public class Bird extends Animal{
 
     void fly() {
         System.out.println("I am flying");
