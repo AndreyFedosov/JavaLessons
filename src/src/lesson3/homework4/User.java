@@ -69,7 +69,7 @@ public class User {
 
     void paySalary()
     {
-        setBalance(getBalance() + getSalary());
+        this.balance += this.salary;
     }
 
     void withdraw(int summ)
@@ -79,11 +79,11 @@ public class User {
 
         if (summ < 1000)
         {
-            setBalance(getBalance() - summ - summ * minWithdrawCommisionInPerc / 100);
+            this.balance = this.balance - summ - summ * minWithdrawCommisionInPerc / 100;
         }
         else
         {
-            setBalance(getBalance() - summ - summ * maxWithdrawCommisionInPerc / 100);
+            this.balance =  this.balance  - summ - summ * maxWithdrawCommisionInPerc / 100;
         }
     }
 
@@ -94,7 +94,7 @@ public class User {
 
     void monthIncreaser(int addMonth)
     {
-        setMonthsOfEmployment(getMonthsOfEmployment() + addMonth);
+        this.monthsOfEmployment += addMonth;
     }
 
 }

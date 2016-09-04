@@ -8,8 +8,8 @@ public class Main {
         Course course1 = new Course("Java Go IT", new Date());
         Course course2 = new Course("C++ for beginners", new Date());
         Course course3 = new Course("How to free Scotland", new Date());
-        Course course4 = new Course(24,"Bruce Willis");
-        Course course5 = new Course(36,"William Wallace");
+        Course course4 = new Course(24,"C++ for beginners", "Bruce Willis");
+        Course course5 = new Course(36,"How to free Scotland", "William Wallace");
 
         Course[] courses1 = {course1,course2,course3};
         Course[] courses2 = {course4,course5};
