@@ -19,7 +19,7 @@ public abstract class Bank {
         this.totalCapital = totalCapital;
     }
 
-    abstract int getLimitOfWithdrawal();
+    public abstract int getLimitOfWithdrawal();
     public abstract int getLimitOfFunding();
     public abstract int getMonthlyRate();
     public abstract int getCommission(int summ);
@@ -29,6 +29,10 @@ public abstract class Bank {
         return this.numberOfEmployees * this.avrSalaryOfEmployee;
     }
 
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName();
+    }
 
     public Currency getCurrency() {
         return currency;

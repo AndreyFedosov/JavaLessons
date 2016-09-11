@@ -6,7 +6,7 @@ public class USBank extends Bank{
     }
 
     @Override
-    int getLimitOfWithdrawal() {
+    public int getLimitOfWithdrawal() {
         if (getCurrency() == Currency.USD) return 1000;
         else if (getCurrency() == Currency.EUR) return 1200;
         else return 0; // if be other currency getLimitOfWithdrawal will be 0;
@@ -15,8 +15,8 @@ public class USBank extends Bank{
     @Override
     public int getLimitOfFunding() {
         if (getCurrency() == Currency.EUR) return 10000;
-        else if (getCurrency() == Currency.USD) return 0;
-        else return 0; // if be other currency getLimitOfFunding will be 0;
+        else if (getCurrency() == Currency.USD) return -1; // if -1 it will be unlimited operation.
+        else return 0; // if be other currency getLimitOfFunding will be -1;
     }
 
     @Override

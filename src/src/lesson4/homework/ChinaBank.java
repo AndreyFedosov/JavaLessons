@@ -5,7 +5,7 @@ public class ChinaBank extends Bank{
         super(currency, id, bankCountry, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
     @Override
-    int getLimitOfWithdrawal() {
+    public int getLimitOfWithdrawal() {
         if (getCurrency() == Currency.USD) return 100;
         else if (getCurrency() == Currency.EUR) return 150;
         else return 0; // if be other currency getLimitOfWithdrawal will be 0;

@@ -16,6 +16,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int d = 0;
+        int k = 100;
+        if ((d == -1) || (k == 100))
+        {
+            System.out.println("temp");
+        }
+
         Figure figure1 = new Figure();
         Figure cirle1 = new Circle();
         Figure square = new Square();

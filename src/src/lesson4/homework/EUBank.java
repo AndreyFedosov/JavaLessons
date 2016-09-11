@@ -6,7 +6,7 @@ public class EUBank extends Bank{
     }
 
     @Override
-    int getLimitOfWithdrawal() {
+    public int getLimitOfWithdrawal() {
         if (getCurrency() == Currency.USD) return 2000;
         else if (getCurrency() == Currency.EUR) return 2200;
         else return 0; // if be other currency getLimitOfWithdrawal will be 0;
