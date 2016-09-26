@@ -2,9 +2,14 @@ package lesson5.homework;
 
 
 import java.util.Date;
-import java.util.Random;
 
 public class DAOImpl implements DAO{
+    Room [] database = new Room[10];
+
+    public DAOImpl() {
+
+    }
+
     @Override
     public Room save(Room room) {
         System.out.println("ID: " + room.getId() + " Room with " + room.getPersons() + " place(s) in " + room.getHotelName() + " with price " + room.getPrice() + " has been saved");
