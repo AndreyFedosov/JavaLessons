@@ -51,7 +51,6 @@ public class Main {
                     result = o2.getUser().getCity().compareTo(o1.getUser().getCity());
                 }
                 return result;
-
             }
         };
 
