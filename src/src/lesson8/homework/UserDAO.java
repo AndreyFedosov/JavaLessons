@@ -30,14 +30,32 @@ public class UserDAO extends AbstactDAOImlp {
         return super.getList();
     }
 
-    public void deletebyid (long id)
+
+    public void deleteById (long id)
     {
-        super.deleteById(id);
+        List<User> userList = super.getList();
+        int index = 0;
+        for (User user : userList) {
+            if (id == user.getId()) {
+                super.deleteById(index);
+            }
+            index++;
+        }
+
     }
 
     public User get (long id)
     {
-        return (User)super.get(id);
+
+        List<User> userList = super.getList();
+        int index = 0;
+        for (User user : userList) {
+            if (id == user.getId()) {
+                return (User)super.get(index);
+            }
+            index++;
+        }
+        return null;
     }
 
 }

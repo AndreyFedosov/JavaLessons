@@ -40,5 +40,13 @@ public class Main {
         userDAO.save(user4);
         System.out.println(userDAO.getList());
 
+        userDAO.deleteById((long)5);
+        System.out.println(userDAO.getList());
+
+
+        user2 = userDAO.get((long)4);
+        System.out.println(user2);
+
+
     }
 }

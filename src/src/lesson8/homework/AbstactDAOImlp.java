@@ -37,11 +37,11 @@ public class AbstactDAOImlp<T> implements AbstractDAO<T> {
 
     @Override
     public void deleteById(long id) {
-
+        list.remove(id);
     }
 
     @Override
     public T get(long id) {
-        return null;
+        return list.get((int)id);
     }
 }
