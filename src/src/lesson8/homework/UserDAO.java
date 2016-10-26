@@ -33,6 +33,7 @@ public class UserDAO extends AbstactDAOImlp {
 
     public void deleteById (long id)
     {
+
         List<User> userList = super.getList();
         int index = 0;
         for (User user : userList) {
