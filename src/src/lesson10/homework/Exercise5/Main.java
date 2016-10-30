@@ -9,6 +9,5 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Catched all Exceptions");
         }
-
     }
 }
