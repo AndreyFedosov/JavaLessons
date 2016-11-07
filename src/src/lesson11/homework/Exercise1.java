@@ -10,7 +10,6 @@ public class Exercise1 {
         BufferedReader bufferedReader = null;
         String thisLine, result = "";
 
-
         try  {
             FileReader fileReader = new FileReader(path);
             bufferedReader = new BufferedReader(fileReader);

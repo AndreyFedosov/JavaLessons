@@ -8,9 +8,7 @@ import java.util.Scanner;
 public class ExecriseWithResources {
     public static String readFile(String path) throws IOException {
 
-
         String thisLine, result = "";
-
 
         try  (
             FileReader fileReader = new FileReader(path);
